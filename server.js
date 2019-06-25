@@ -2,10 +2,12 @@ const express = require('express'); // importanto o express que retorna uma fun�
 //chamando a função que foi importada
 const app = express();
 
-//toda vez que o usuario acessar a rota raiz, exibirá  que for feito.
-// esse get passa uma função que recebe dois parâmetros: req(requisição do servidor, contem os detalhes e informaçoes da requisição)  
-//e res(a resposta que damos a requisição.) faz a requisição e o servidor dar uma resposta.
+/*CRIANDO UMA ROTA: Toda vez que o usuario acessar a rota raiz, exibirá  que for feito.
+esse get passa uma função que recebe dois parâmetros: req(requisição do servidor, contem os detalhes e informaçoes da requisição)  
+e res(a resposta que damos a requisição.) faz a requisição e o servidor dar uma resposta.
+*/
 app.get('/', (req, res) => {
+    //passando uma resposta para a requisição
     res.send('HELLOOOOW')
 });
 

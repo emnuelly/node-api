@@ -1,0 +1,11 @@
+[0;1;31m●[0m mongodb.service - High-performance, schema-free document-oriented database
+   Loaded: loaded (/etc/systemd/system/mongodb.service; disabled; vendor preset: enabled)
+   Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2019-06-26 13:12:44 -03; 7s ago
+  Process: 16081 ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf [0;1;31m(code=exited, status=217/USER)[0m
+ Main PID: 16081 (code=exited, status=217/USER)
+
+jun 26 13:12:44 hefesto systemd[1]: Started High-performance, schema-free document-oriented database.
+jun 26 13:12:44 hefesto systemd[16081]: [0;1;31m[0;1;39m[0;1;31mmongodb.service: Failed to determine user credentials: No such process[0m
+jun 26 13:12:44 hefesto systemd[16081]: [0;1;31m[0;1;39m[0;1;31mmongodb.service: Failed at step USER spawning /usr/bin/mongod: No such process[0m
+jun 26 13:12:44 hefesto systemd[1]: [0;1;39m[0;1;31m[0;1;39mmongodb.service: Main process exited, code=exited, status=217/USER[0m
+jun 26 13:12:44 hefesto systemd[1]: [0;1;39m[0;1;31m[0;1;39mmongodb.service: Failed with result 'exit-code'.[0m
